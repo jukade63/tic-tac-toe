@@ -1,0 +1,31 @@
+td {
+  border: 2px solid #333;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  vertical-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.first-row td {
+  border-top: 0;
+}
+.last-row td {
+  border-bottom: 0;
+}
+.first-row td:first-child,
+.second-row td:first-child,
+.last-row td:first-child {
+  border-left: 0;
+}
+.first-row td:last-child,
+.second-row td:last-child,
+.last-row td:last-child {
+  border-right: 0;
+}
