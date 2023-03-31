@@ -1,10 +1,27 @@
+body {
+  background-color: rgb(234, 216, 230);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+div:first-of-type{
+    display: flex;
+}
+h1 {
+  margin: 1em auto;
+  max-width: 300px;
+  padding: 8px 12px;
+  background: linear-gradient(to right, rgb(173, 195, 234), rgb(113, 157, 240)) ;
+  box-shadow: 2px 2px 0px 3px rgb(27, 27, 27);
+}
+table {
+  margin: 2em auto;
+  background-color: aliceblue;
+}
 td {
   border: 2px solid #333;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   text-align: center;
   vertical-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 70px;
   cursor: pointer;
 }
@@ -28,4 +45,23 @@ table {
 .second-row td:last-child,
 .last-row td:last-child {
   border-right: 0;
+}
+.end-game {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  flex-direction: column;
+}
+.end-game button {
+  margin-top: 0.5em;
+  font-size: 3rem;
+  padding: 5px 10px;
 }
