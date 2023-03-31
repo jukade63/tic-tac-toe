@@ -79,7 +79,7 @@ const displayController = (() => {
     e.target.innerText = currentTurn;
     if (checkWin(currentTurn)) {
       endGame();
-      declareResult(`player ${currentTurn} wins!`);
+      declareResult(`Player ${currentTurn} wins!`);
     } else if (checkDraw()) {
       endGame();
       declareResult("Game Draw");
